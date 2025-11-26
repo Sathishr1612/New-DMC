@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DMC Menu</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css" media="all">
+  <link rel="stylesheet" href="fonts/font-awesome/css/line-awesome.css" type="text/css" media="all">
+  <link rel="stylesheet" href="styles/animate.css" type="text/css" media="all">
+  <link rel="stylesheet" href="styles/splitting.css" type="text/css" media="all">
+  <link rel="stylesheet" href="s1.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="styles/jquery.fancybox.min.css">
+
+  <style>
+    @media screen and (max-width: 767px) {
+      .kf-menu-item .price:before {
+        width: 47%;
+      }
+
+      .kf-menu-item .price {
+        padding-left: 50%;
+      }
+    }
+
+    .name {
+      text-transform: capitalize;
+    }
+
+    @media screen and (max-width: 420px) {
+      .kf-filter a {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 12px 12px;
+        font-size: 13px;
+      }
+
+      .kf-menu-item .price {
+        padding-left: 42%;
+      }
+
+      .kf-menu-item .price:before {
+        width: 40% !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+  
+    <header class="kf-header border-bottom">
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/myimg/Top-Seaside-Restaurants-in-Besant-Nagar.svg" class="img-fluid" alt="Top Seaside Restaurants in Besant Nagar">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mt-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="menu.html">Full Menu</a></li>
+                  <li><a class="dropdown-item" href="bestsellers.html">Bestsellers</a></li>
+                  <li><a class="dropdown-item" href="chaaps.html">Chaaps</a></li>
+                  <li><a class="dropdown-item" href="wraps.html">Rolls</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="header-search-wrap me-3">
+              <a href="search.html" class="header-search-btn" aria-label="Open search">
+                <svg class="header-search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="11" cy="11" r="6"></circle>
+                  <line x1="15" y1="15" x2="20" y2="20"></line>
+                </svg>
+              </a>
+            </div>
+
+               <a
+                  href="https://www.google.com/search?sca_esv=6f10166bc04ebec3&rlz=1C1RLNS_enIN1150IN1151&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E6cN0MJN53brT6R-MdYAFV2F7LFAsQTQNnZN8fWNdhi7wmMpVPgfsYBFj5rJTZOtjkz6gYXw8LxBYR-UcAmgt5ub_2iBMxIWG7vWv8fVmQdP28cNeFcAF1e48c2Ok_Ce08ahtoSc6W-XPuu1T2wzTE8AhIDj2DSipmn1pZBzBoV1aOyO3g%3D%3D&q=Delhi+Malai+Chaap+Besant+Nagar+-+Veg+Restaurant+in+Besant+Nagar+Beach+Reviews&sa=X&ved=2ahUKEwjbot2wjICRAxW14zgGHQUkFVoQ0bkNegQIMBAE"
+                  class="btn btn-success me-3"
+                  style="width: 180px; position: relative; z-index: 9999;"
+                  target="_blank"
+                  >
+                  Reviews
+                  </a>  
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+     
+      <section class="section kf-menu kf-menu-tabs mb-5">
+        <div class="container">
+          <div class="kf-titles text-center py-4">
+            <div class="kf-subtitle element-anim-1 scroll-animate mb-2" data-animate="active">Choose Best of</div>
+            <h3 class="kf-title element-anim-1 scroll-animate" data-animate="active">
+              Delhi Malai Chaap - North Indian <br>Restaurant in Besant Nagar
+            </h3>
+          </div>
+
+          <div class="kf-filter kf-filter-menu element-anim-1 scroll-animate" data-animate="active">
+            <a href="#" data-href=".all" class="active">All</a>
+            <a href="#" data-href=".fast-food">TANDOORI SNACKS</a>
+            <a href="#" data-href=".hot-coffee">Roll N Wraps</a>
+          </div>
+
+          <div class="kf-menu-items" style="background-image: url(images/menu_logo.png);">
+              <div class="row g-4">
+                <!-- card 1 -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/burj-khalifa-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/burj-khalifa-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Burj Khalifa Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 120 / ₹ 200</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card">
+                    <div class="blk-plate">
+                      <a href="images/menu/taj-mahal-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/taj-mahal-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Taj Mahal Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 120 / ₹ 200</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/malai-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/malai-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Malai Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/malai-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/malai-chaap-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Malai Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 5 -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/stuffed-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/stuffed-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Stuffed Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 120 / ₹ 200</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 27 (Afghani Malai Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/afghani-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/afghani-chaap-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Afghani Malai Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 6 -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/masala-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/masala-chaap-canva-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Masala Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 28 (Masala Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/masala-chaap-roll-3.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/masala-chaap-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Masala Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 7 (Paneer Tikka) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/panner-tikka-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/paneer-tikka-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Panner Tikka</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 190</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 8 (Haryali Paneer) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/haryali-panner-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/haryali-panner-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Haryali Panner</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 190</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 8.1 (Chatpata Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/chatpata-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/chatpata-roll-canva-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Chatpata Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 9 (Chatpata Chaap) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/chatpata-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/chatpata-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Chatpata Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 12 (Paneer Tikka Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/paneer-tikka-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/paneer-tikka-roll-canva-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Panner Tikka Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 14 (Malai Paneer) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/malai-paneer-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/malai-paneer-can.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Malai Panner</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 190</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 15 (Malai Paneer Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/malai-paneer-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/malai-paneer-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Malai Panner Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 16 (Mexican Chaap) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/mexican-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/mexican-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Mexican Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 17 (Mexican Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/mexican-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/mexican-chaap-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Mexican Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 18 (Mexican Paneer) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/mexican-paneer-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/mexican-paneer-canva-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Mexican Panner</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 190</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 13 (Jumbo Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/jumbo-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/jumbo-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Jumbo Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 150</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 20 (Peri Peri Chaap) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/peri-peri-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/peri-peri-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Peri Peri Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card (Achari Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/achari-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/aachari-chaap-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Achari Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 21 (Peri Peri Paneer) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/peri-peri-paneer-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/peri-peri-paneer-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Peri Peri Panner</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 190</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 22 (Peri Peri Paneer Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/peri-peri-paneer-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/peri-peri-paneer-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Peri Peri Panner Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 23 (Schezwan Chaap) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/schezwan-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/schezwan-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Schezwan Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 24 (Schezwan Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/schezwan-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/schezwan-chaap-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Schezwan Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 25 (Schezwan Paneer) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/schezwan-panner-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/schezwan-panner-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Schezwan Panner</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 190</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 26 (Schezwan Paneer Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/schezwan-panner-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/schezwan-panner-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Schezwan Panner Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card 27 (Afghani Chaap) -->
+                <div class="col-12 col-md-6 col-lg-4 fast-food kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/afghani-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/afghani-chaap-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Afghani Chaap</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card (Stuffed Chaap Roll) -->
+                <div class="col-12 col-md-6 col-lg-4 hot-coffee kf-menu-item-col">
+                  <div class="blk-card" data-animate="active">
+                    <div class="blk-plate">
+                      <a href="images/menu/stuffed-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/stuffed-chaap-roll-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Stuffed Chaap Roll</div>
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 120</div>
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+        </div> 
+      </section>
+    </div> 
+
+    <!-- Footer -->
+    <div class="kf-footer">
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="kf-logo">
+              <a href="#"><img src="assets/logo.png" alt="" loading="lazy"></a>
+            </div>
+          </div>
+
+         
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="kf-f-hours">
+              <h5>Working Hours</h5>
+              <ul>
+                <li>Monday - Thursday<em>11:00 am - 09:00pm</em></li>
+                <li>Friday - Sunday<em>11:00 am - 11:00pm</em></li>
+                <li>
+                  <strong>We are Available on</strong><br>
+                  <a href="https://www.zomato.com/chennai/delhi-malai-chaap-besant-nagar/order" target="_blank">
+                    <img src="assets/myimg/1.png" alt="Zomato" style="height:28px; vertical-align:middle;">
+                  </a>
+                  <a href="https://www.swiggy.com/city/chennai/delhi-malai-chaap-adyar-besant-nagar-rest1054491" target="_blank" style="margin-left:12px;">
+                    <img src="assets/myimg/2.png" alt="Swiggy" style="height:32px; vertical-align:middle;">
+                  </a>
+                  <br><br>
+                  <div class="footer-social">
+                    <a href="https://www.instagram.com/dmcbesantnagar?igsh=aXE4MjNub3F4OGJz" target="_blank" class="social-icon insta" aria-label="Instagram">
+                      <span class="bi bi-instagram"></span>
+                    </a>
+                    <a href="https://www.facebook.com/61582463131758" target="_blank" class="social-icon fb" aria-label="Facebook">
+                      <span class="bi bi-facebook"></span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCbTJNiqsWGYHpMckUBGGBPw" target="_blank" class="social-icon yt" aria-label="YouTube">
+                      <span class="bi bi-youtube"></span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- contact -->
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="kf-f-contact element-anim-1 scroll-animate" data-animate="active">
+              <h5>Contact Us</h5>
+              <ul>
+                <li>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Delhi+Malai+Chaap+Besant+Nagar" target="_blank" style="text-decoration:none; color:inherit;">
+                    <i class="img-ic">
+                      <img src="./assets/location.png" alt="">
+                    </i>
+                    <em>Location :</em>
+                    14/38 Thiruvalluvar Nagar, Urur, Besant Nagar Beach, Chennai - 600090.
+                  </a>
+                  <br>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Delhi+Malai+Chaap+Besant+Nagar" target="_blank" style="display:inline-block; margin-top:10px; padding:4px 10px; padding-bottom:6px; background:#5b931d; color:#fff; border-radius:4px; font-size:12px; text-decoration:none;">
+                    View Location
+                  </a>
+                </li>
+                <li class="mt-3">
+                  <a href="tel:+918778863036" style="text-decoration:none; color:inherit;">
+                    <i class="img-ic">
+                      <img src="./assets/call.png" alt="">
+                    </i>
+                    <em>Phone Number :</em>
+                    +91 8778863036
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- gallery -->
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="kf-f-gallery element-anim-1 scroll-animate" data-animate="active">
+              <h5>Gallery</h5>
+              <ul>
+                <li>
+                  <a href="images/menu/malai-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/malai-chaap-1.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="images/menu/mexican-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/mexican-chaap-1.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="images/menu/schezwan-panner-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/schezwan-panner-1.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="images/menu/jumbo-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/jumbo-roll-1.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="images/menu/achari-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/aachari-chaap-roll-1.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="images/menu/mexican-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/mexican-chaap-roll-1.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div> 
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center">
+            <div class="kf-copyright">
+              Copyright © 2025 Delhi Malai Chaap | All Rights Reserved. Designed by <b>WiseWebTek.</b>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </div> 
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/splitting.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
+  <script src="js/jquery.scrolla.js"></script>
+  <script src="js/skrollr.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+
+  <script>
+    $("[data-fancybox]").fancybox({
+      buttons: [
+        "zoom",
+        "slideShow",
+        "fullScreen",
+        "close"
+      ]
+    });
+
+    $(document).ready(function () {
+      $('.kf-filter a').on('click', function (e) {
+        e.preventDefault();
+
+        // jQuery: toggle active class
+        $('.kf-filter a').removeClass('active');
+        $(this).addClass('active');
+
+        var filterValue = $(this).attr('data-href');
+
+        if (filterValue === '.all') {
+          document.querySelectorAll('.fast-food, .hot-coffee').forEach(item => {
+            item.style.display = 'block';
+          });
+        } else if (filterValue === '.fast-food') {
+          document.querySelectorAll('.fast-food').forEach(item => item.style.display = 'block');
+          document.querySelectorAll('.hot-coffee').forEach(item => item.style.display = 'none');
+        } else if (filterValue === '.hot-coffee') {
+          document.querySelectorAll('.hot-coffee').forEach(item => item.style.display = 'block');
+          document.querySelectorAll('.fast-food').forEach(item => item.style.display = 'none');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

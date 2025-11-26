@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>DMC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/animate.css" media="all" />
+    <link rel="stylesheet" href="styles/splitting.css" media="all" />
+    <link rel="stylesheet" href="styles/swiper.css" media="all" />
+    <link rel="stylesheet" href="style.css" media="all" />
+    <link rel="stylesheet" href="s1.css" media="all" />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+
+    <style>
+      @media screen and (min-width: 720px) {
+        .tc-about-st2 .my h2 {
+          letter-spacing: 0.05em;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 2.5em !important;
+          line-height: 1.5;
+        }
+
+        .tc-about-st2 .num {
+          font-size: 50px;
+        }
+      }
+
+      .slide1.js-parallax {
+        background-image: url(assets/myimg/home/s1.jpg);
+      }
+
+      .slide2.js-parallax {
+        background-image: url(assets/myimg/home/s2.jpg);
+      }
+
+      .slide3.js-parallax {
+        background-image: url(assets/myimg/home/s3.jpg);
+      }
+
+      @media (max-width: 998px) {
+        .kf-started-item .container {
+          align-items: unset;
+          top: 75%;
+        }
+
+        .img2 {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .slide1.js-parallax {
+          background-image: url(assets/myimg/home/sm-1.jpg);
+          background-position: right center;
+        }
+
+        .slide2.js-parallax {
+          background-image: url(assets/myimg/home/sm-2.jpg);
+          background-position: right center;
+        }
+
+        .slide3.js-parallax {
+          background-image: url(assets/myimg/home/sm-3.jpg);
+          background-position: right center;
+        }
+
+        .kf-started-item .name {
+          font-size: 35px;
+          line-height: 49px;
+          margin: 0 0 20px 0;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .slide.js-parallax {
+          background-position: right center !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .slide1.js-parallax {
+          background-image: url(assets/myimg/home/n1.jpg);
+          background-position: right center;
+        }
+
+        .slide2.js-parallax {
+          background-image: url(assets/myimg/home/smm2.jpg);
+          background-position: right center;
+        }
+
+        .slide3.js-parallax {
+          background-image: url(assets/myimg/home/smm3.jpg);
+          background-position: right center;
+        }
+
+        .tc-about-st2 .visitors {
+          font-size: 30px;
+        }
+      }
+
+      .kf-parallax a:hover {
+        color: #fff !important;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg">
+      <!-- Header -->
+      <header class="kf-header border-bottom">
+        <nav class="navbar navbar-expand-lg bg-black">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="assets/myimg/Top-Seaside-Restaurants-in-Besant-Nagar.svg" class="img-fluid" alt="Top Seaside Restaurants in Besant Nagar" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mt-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="menu.html">Full Menu</a></li>
+                    <li><a class="dropdown-item" href="bestsellers.html">Bestsellers</a></li>
+                    <li><a class="dropdown-item" href="chaaps.html">Chaaps</a></li>
+                    <li><a class="dropdown-item" href="wraps.html">Rolls</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+
+              <div class="header-search-wrap me-3">
+                <a href="search.html" class="header-search-btn" aria-label="Open search">
+                  <svg class="header-search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="6"></circle>
+                    <line x1="15" y1="15" x2="20" y2="20"></line>
+                  </svg>
+                </a>
+              </div>                     
+                  <a
+                  href="https://www.google.com/search?sca_esv=6f10166bc04ebec3&rlz=1C1RLNS_enIN1150IN1151&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E6cN0MJN53brT6R-MdYAFV2F7LFAsQTQNnZN8fWNdhi7wmMpVPgfsYBFj5rJTZOtjkz6gYXw8LxBYR-UcAmgt5ub_2iBMxIWG7vWv8fVmQdP28cNeFcAF1e48c2Ok_Ce08ahtoSc6W-XPuu1T2wzTE8AhIDj2DSipmn1pZBzBoV1aOyO3g%3D%3D&q=Delhi+Malai+Chaap+Besant+Nagar+-+Veg+Restaurant+in+Besant+Nagar+Beach+Reviews&sa=X&ved=2ahUKEwjbot2wjICRAxW14zgGHQUkFVoQ0bkNegQIMBAE"
+                  class="btn btn-success me-3"
+                  style="width: 180px; position: relative; z-index: 9999;"
+                  target="_blank"
+                  >
+                  Reviews
+                  </a>  
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="wrapper">
+        <section class="section kf-started-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="kf-started-item">
+                  <div class="slide slide1 js-parallax"></div>
+
+                  <div class="container">
+                    <div class="description align-left element-anim-1">
+                      <div class="subtitles d-none d-sm-block">Welcome to Delhi Malai Chaap Besant Nagar</div>
+
+                      <h1 class="name text-anim-1" data-splitting="chars">
+                        Delhi Malai Chaap <br />
+                        @ Besant Nagar
+                      </h1>
+
+                      <div class="kf-bts mb-5">
+                        <a href="menu.html" class="kf-btn">
+                          <span>explore more</span>
+                          <i class="fas fa-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="kf-started-item">
+                  <div class="slide slide2 js-parallax"></div>
+
+                  <div class="container">
+                    <div class="description align-left element-anim-1">
+                      <div class="subtitles d-none d-sm-block">Welcome to Delhi Malai Chaap Besant Nagar</div>
+
+                      <h2 class="name text-anim-1" data-splitting="chars">
+                        Experience Delhi’s<br/>
+                        Street Food Magic!
+                      </h2>
+
+                      <div class="kf-bts">
+                        <a href="menu.html" class="kf-btn">
+                          <span>explore more</span>
+                          <i class="fas fa-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="kf-started-item">
+                  <div class="slide slide3 js-parallax"></div>
+
+                  <div class="container">
+                    <div class="description align-left">
+                      <div class="subtitles d-none d-sm-block">Welcome to Delhi Malai Chaap Besant Nagar</div>
+
+                      <h2 class="name text-anim-1" data-splitting="chars">
+                        Authentic Delhi <br />
+                        Malai Chaap!
+                      </h2>
+
+                      <div class="kf-bts">
+                        <a href="menu.html" class="kf-btn">
+                          <span>explore more</span>
+                          <i class="fas fa-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+        </section>
+
+
+<section class="dmc-section py-5 py-lg-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6 mt-5">
+          <div class="section-title">
+
+                    <h2 class="text-anime-style-2 mt-5" data-cursor="-opaque">
+                      A Healthier Alternative <br> to 
+                      <span>Fast Food</span>
+                    
+                    </h5>
+
+                    <p class="wow fadeInUp lead text-white-50" data-wow-delay="0.2s">
+                     Are you looking for a delicious and nutritious alternative to traditional fast food? Look no further than Delhi Malai Chaap!
+                    </p>
+
+                    <p class="wow fadeInUp lead text-white-50 " data-wow-delay="0.2s">
+                     Our chaap is made from high-quality soya, making it an excellent source of plant-based protein. Soya is rich in essential amino acids, fiber, and energy, without excess fat, making it a great option for fitness enthusiasts and health-conscious individuals.
+                    </p>
+
+                     <p class="wow fadeInUp lead text-white-50 " data-wow-delay="0.2s">
+                     At Delhi Malai Chaap, we're committed to serving you the best-tasting and healthiest chaap options. Our menu features a variety of flavors, Malai, Peri peri , Schezwan , Mexican , Aachrai and many more....
+                    </p>
+                  </div>
+
+          <div class="row g-3 mb-4">
+          <div class="col-sm-4">
+            <div class="d-flex flex-column gap-2">
+              <div class="dmc-icon-pill">
+                <img src="assets/myimg/home/home-3.svg" alt="" class="img-fluid">
+              </div>
+              <span class="fw-semibold text-white">Authentic Taste</span>
+              <small class="text-white-50">Traditional masalas & slow-cooked goodness.</small>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="d-flex flex-column gap-2">
+              <div class="dmc-icon-pill">
+                <img src="assets/myimg/home/home-4.svg" alt="" class="img-fluid">
+              </div>
+              <span class="fw-semibold text-white">Beachside Vibes</span>
+              <small class="text-white-50">Right at Besant Nagar’s vibrant coastline.</small>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="d-flex flex-column gap-2">
+              <div class="dmc-icon-pill">
+                <img src="assets/myimg/home/home-3.svg" alt="" class="img-fluid">
+              </div>
+              <span class="fw-semibold text-white">100% Veg</span>
+              <small class="text-white-50">Pure vegetarian delights, always fresh.</small>
+            </div>
+          </div>
+        </div>
+           
+      <div class="col-lg-12 mt-4">
+     <h2 class="visitors wow fadeInUp slow d-flex align-items-end flex-column flex-sm-row text-center text-sm-start" data-wow-delay="0.2s">
+    <span class="num" data-target="14">0</span>
+    <span class="txt ms-sm-2">YEARS LEGACY</span>
+
+  </h2>
+</div>
+</div>
+
+      <div class="col-lg-6">
+        <div class="position-relative dmc-media">
+
+          <div class="card border-0 shadow-lg dmc-card-main">
+            <div class="card-body p-0 overflow-hidden">
+              <img src="images/menu/home-main-1.png"
+                   alt="Delhi Malai Chaap"
+                   class="img-fluid w-100">
+            </div>
+          </div>
+
+         
+          <div class="card border-0 shadow dmc-card-small">
+            <div class="card-body p-0 overflow-hidden">
+              <img src="images/menu/home-one.png"
+                   alt="Delhi Malai Chaap"
+                   class="img-fluid w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section-dark">
+  <div class="container py-5 mt-4 our-ingredients">
+    <div class="row align-items-center g-4">
+             
+       <div class="col-lg-5 order-2 order-lg-1">
+        <div class="hero-image-card">
+        
+          <img
+            src="images/menu/dmc.png"
+            alt="Delhi Malai Chaap"
+          />
+        </div>
+      </div>
+      <div class="col-lg-7 order-1 order-lg-2">
+                <div class="our-ingredients-content">
+                  <div class="section-title">
+
+                    <h2 class="text-anime-style-2" data-cursor="-opaque">
+                     Delhi Malai Chaap <br>
+                      <span>@ Bessie Beach</span>
+                    
+                    </h2>
+
+                    <p class="wow fadeInUp lead text-white-50 wow fadeInUp" data-wow-delay="0.2s">
+                      Experience the authentic flavors of Delhi's street food right by the serene shores of Besant Nagar. Our pure vegetarian offerings bring the rich, creamy, and spicy delights of North India to Chennai's coastal heart.
+                    </p>
+
+                    
+
+                    <h5 class="mt-4">Why choose Delhi Malai Chaap?</h5>
+
+        <ul class="list-unstyled  mb-3">
+          <li class="wow fadeInUp lead text-white-50 d-flex mb-1">
+            <span class="me-2 text-success">•</span>
+            <span>
+              High in Protein: Soya chaap is an excellent source of plant-based
+              protein, perfect for vegetarians and vegans.
+            </span>
+          </li>
+          <li class="d-flex mb-1 lead text-white-50">
+            <span class="me-2 text-success ">•</span>
+            <span>
+              Low in Fat: Our chaap is cooked with minimal oil, making it a
+              healthier alternative to traditional fast food.
+            </span>
+          </li>
+          <li class="d-flex mb-1  lead text-white-50">
+            <span class="me-2 text-success">•</span>
+            <span>
+              Rich in Fiber: Soya is rich in dietary fiber, promoting digestive
+              health and satiety.
+            </span>
+          </li>
+          <li class="d-flex mb-1 lead text-white-50">
+            <span class="me-2 text-success">•</span>
+            <span>
+              Versatile: Enjoy our chaap as a snack, meal, or even as a
+              protein-packed addition to your favorite recipes.
+            </span>
+          </li>
+        </ul>
+
+        <p class="fw-semibold lead text-white-50 ">
+          Make the switch to Delhi Malai Chaap today and indulge in a
+          healthier, tastier alternative to fast food!
+        </p>
+
+         <div class="kf-bts mt-4">
+                      <a href="menu.html" class="kf-btn">
+                        <span>Explore Chaap Menu</span>
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>                
+                </div>
+              </div>   
+         </div>
+       </div>
+    </section>
+
+
+        <section class="section kf-menu" style="padding-bottom: 0;">
+          <div class="container">
+            <div class="kf-titles align-center mb-5 mt-3">
+              <h3 class="kf-title element-anim-1 scroll-animate" data-animate="active">
+                Veg Restaurant in Besant Nagar - Menu
+              </h3>
+              
+            </div>
+
+            <!-- 6 cards -->
+            <div class="container">
+              <div class="row g-4 mt-3">
+                <!-- CARD 1 - Burj Khalifa Chaap -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="blk-card">
+                    <div class="blk-plate">
+                      <a href="images/menu/burj-khalifa-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/burj-khalifa-chaap-1.png" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Burj Khalifa Chaap</div>
+
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 120 / ₹ 200</div>
+
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 2 - Taj Mahal Tikka -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="blk-card">
+                    <div class="blk-plate">
+                      <a href="images/menu/taj-mahal-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/taj-mahal-chaap-1.png" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Taj Mahal Chaap</div>
+
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 120 / ₹ 200</div>
+
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 3 - Malai Chaap -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="blk-card">
+                    <div class="blk-plate">
+                      <a href="images/menu/malai-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/malai-chaap-1.png" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Malai Chaap</div>
+
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 180</div>
+
+                      <a href="contact.html" class="blk-add btn btn-sm mt-3">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 4 - Stuffed Chaap Roll -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="blk-card">
+                    <div class="blk-plate">
+                      <a href="images/menu/stuffed-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/malai-chaap-roll-1.png" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Stuffed Chaap Roll</div>
+
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 120</div>
+
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 5 - Paneer Tikka -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="blk-card">
+                    <div class="blk-plate">
+                      <a href="images/menu/panner-tikka-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/paneer-tikka-1.png" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="blk-cat">Starters</div>
+                    <div class="blk-title">Paneer Tikka</div>
+
+                    <div class="blk-card-footer">
+                      <div class="price-value">Half / Full</div>
+                      <div class="price-value">₹ 100 / ₹ 190</div>
+                       
+
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 6 - Malai Chaap Roll -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="blk-card">
+                    <div class="blk-plate">
+                      <a href="images/menu/malai-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                        <img src="images/menu/malai-chaap-roll-1.png" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="blk-cat">Roll</div>
+                    <div class="blk-title">Malai Chaap Roll</div>
+
+                    <div class="blk-card-footer">
+                      <div class="price-value">Single</div>
+                      <div class="price-value">₹ 100</div>
+
+                      <a href="contact.html" class="blk-add btn btn-sm mt-2">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="kf-bts text-center mt-3 pt-5 pb-3">
+              <a href="menu.html" class="kf-btn">
+                <span>Read more</span>
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <div style="padding-bottom: 35px;">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-1 order-2">
+                <div class="our-ingredients-image">
+                  <div class="our-ingredients-img">
+                    <figure>
+                      <img src="images/menu/home-dish-1.png" alt="Our Ingredients" loading="lazy" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 order-lg-2 order-1">
+                <div class="our-ingredients-content">
+                  <div class="section-title">
+                    <h3 class="wow fadeInUp">our speciality</h3>
+
+                    <h2 class="text-anime-style-2" data-cursor="-opaque">
+                      Experience the creamy delight of
+                      <span>Malai Chaap</span>
+                      at Delhi Malai Chaap's
+                      <span> Besant Nagar Branch</span>
+                    </h2>
+
+                    <p class="wow fadeInUp lead text-white-50" data-wow-delay="0.2s">
+                      Malai Chaap is the signature dish at Delhi Malai Chaap, celebrated for its rich, creamy flavors and tender texture.
+                      This vegetarian delicacy is crafted from soya chaap marinated in a blend of curd, cream, and aromatic spices, then
+                      grilled to perfection, offering a satisfying alternative to traditional meat dishes.
+                    </p>
+
+                    <p class="wow fadeInUp lead text-white-50" data-wow-delay="0.2s">
+                      At the Besant Nagar outlet, conveniently located near the beach, you can enjoy this North Indian favorite as a quick
+                      takeaway, perfect for a flavorful snack during your seaside stroll. The Malai Chaap here is known for its authentic
+                      taste and affordability, making it a popular choice among locals and visitors alike.
+                    </p>
+                  </div>
+
+                  <div class="our-ingredients-btn wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="kf-bts">
+                      <a href="about.html" class="kf-btn">
+                        <span>Read More</span>
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  
+<section class="section-dark">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <p class="eyebrow-text">Paneer Specials</p>
+      <h2>Indulge in Our Paneer Delights</h2>
+      <p class="mb-0">
+        Craving something creamy and rich? Try our paneer dishes, cooked to
+        perfection and served in a range of mouth-watering flavors:
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-6 col-lg-4">
+        <div class="paneer-card text-center">
+          <span class="paneer-title">Paneer Tikka</span>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <div class="paneer-card text-center">
+          <span class="paneer-title">Malai Paneer</span>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <div class="paneer-card text-center">
+          <span class="paneer-title">Peri Peri Paneer</span>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <div class="paneer-card text-center">
+          <span class="paneer-title">Schezwan Paneer</span>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <div class="paneer-card text-center">
+          <span class="paneer-title">Mexican Paneer</span>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <div class="paneer-card text-center">
+          <span class="paneer-title">Hariyali Paneer</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================= TESTIMONIALS ================================== -->
+        <section class="testimonial-slider py-3 mt-4">
+          <div class="container">
+            <div class="kf-titles align-center mb-5 mt-3">
+              <h3 class="kf-title element-anim-1 scroll-animate" data-animate="active">
+                CUSTOMER REVIEWS
+              </h3>
+            </div>
+
+            <div class="testimonial-slider-section">
+              <div class="testimonial-slider-testimonialViewport" id="testimonialViewport">
+                <div class="testimonial-slider-testimonialTrack" id="testimonialTrack">
+                 
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Jayashree Anand</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★☆</div>
+                    <div class="testimonial-quote">
+                      “Tried their chaap varieties for the first time — very tasty and 100% vegetarian.
+                      Good portions and the mint chutney was amazing. Seating can improve, but overall delicious food.”
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Aakash Abel</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-quote">
+                      "Super neat, hygienic place with professional staff.
+                      Pure-veg, high-protein options and very affordable prices.
+                      Everything tasted amazing — definitely recommending this!"
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Linkes</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-quote">
+                      "It’s amazing for Delhi malai chaap — truly delivered a top-tier dining experience.
+                      Cozy ambiance and bold flavors — definitely on the radar."
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Monika Mahesh</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-quote">
+                      "MUST TRY PLACE! First time at Delhi Malai Chaap DMC and I’m in love!
+                      So many unique chaap flavours, all delicious and high-protein.
+                      Great portions, friendly owner, and overall a wonderful experience. Can’t wait to try more!"
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Shivani Jain</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-quote">
+                      "Had the most amazing chaaps and rolls, very tasty. The staff was very kind."
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Sonu Das</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-quote">
+                      "Food was very good. Masala chaap roll was delicious. Staff was very friendly."
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Tajurba Priyanka</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-quote">
+                      "Great experience, hygiene, beautiful location."
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card-box">
+                    <div class="testimonial-name">Mukesh Muki</div>
+                    <div class="testimonial-role">Customer</div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-quote">
+                      "Enjoyed Delhi-style malai chaap — great overall."
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+         
+              <div class="testimonial-dots" id="testimonialDots"></div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================= TESTIMONIALS END ================================== -->
+
+<section class="section order-cta py-2">
+  <div class="container">
+    <div class="order-cta-card row align-items-center gx-4">
+
+     
+      <div class="col-lg-8 col-md-7 col-12">
+        <h3 class="order-cta-title mb-1">
+          ORDER FOR YOU &amp; FOR YOUR FAMILY MEMBERS
+        </h3>
+        <p class="order-cta-subtext mb-0">
+          Call us directly to place takeaway &amp; bulk orders.
+        </p>
+      </div>
+
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
+                <a href="tel:+918778863036" class="kf-btn1 element-anim-1 scroll-animate" data-animate="active">
+                  <i class="img-poh">
+                    <img src="./assets/phone.png" alt="Phone" />
+                  </i>
+                  <span style="font-size: 20px;">+91 8778863036</span>
+                </a>
+              </div>
+
+    </div>
+  </div>
+</section>
+ 
+      </div>
+   
+    </div>
+   
+    <div class="kf-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+           
+            <div class="kf-logo element-anim-1 scroll-animate" data-animate="active">
+              <a href="#">
+                <img src="assets/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="kf-f-hours">
+              <h5>Working Hours</h5>
+
+              <ul>
+                <li>
+                  Monday - Thursday
+                  <em>11:00 am - 09:00pm</em>
+                </li>
+                <li>
+                  Friday - Sunday
+                  <em>11:00 am - 11:00pm</em>
+                </li>
+
+                <li>
+                  <strong>We are Available on</strong>
+                  <br />
+
+                  <a href="https://www.zomato.com/chennai/delhi-malai-chaap-besant-nagar/order" target="_blank">
+                    <img src="assets/myimg/1.png" alt="Zomato" style="height: 28px; vertical-align: middle;" />
+                  </a>
+
+                  <a href="https://www.swiggy.com/city/chennai/delhi-malai-chaap-adyar-besant-nagar-rest1054491" target="_blank" style="margin-left: 12px;">
+                    <img src="assets/myimg/2.png" alt="Swiggy" style="height: 32px; vertical-align: middle;" />
+                  </a>
+
+                  <br /><br />
+
+                  
+                  <div class="footer-social">
+                    <a href="https://www.instagram.com/dmcbesantnagar?igsh=aXE4MjNub3F4OGJz" target="_blank" class="social-icon insta" aria-label="Instagram">
+                      <span class="bi bi-instagram"></span>
+                    </a>
+
+                    <a href="https://www.facebook.com/61582463131758" target="_blank" class="social-icon fb" aria-label="Facebook">
+                      <span class="bi bi-facebook"></span>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCbTJNiqsWGYHpMckUBGGBPw" target="_blank" class="social-icon yt" aria-label="YouTube">
+                      <span class="bi bi-youtube"></span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+           
+            <div class="kf-f-contact element-anim-1 scroll-animate" data-animate="active">
+              <h5>Contact Us</h5>
+
+              <ul>
+                <li>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Delhi+Malai+Chaap+Besant+Nagar" target="_blank" style="text-decoration: none; color: inherit;">
+                    <i class="img-ic">
+                      <img src="./assets/location.png" alt="" />
+                    </i>
+                    <em>Location :</em>
+                    14/38 Thiruvalluvar Nagar, Urur, Besant Nagar Beach, Chennai - 600090.
+                  </a>
+
+                  <br />
+
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Delhi+Malai+Chaap+Besant+Nagar"
+                    target="_blank"
+                    style="display: inline-block; margin-top: 10px; padding: 4px 10px 6px 10px; background: #5b931d; color: #fff; border-radius: 4px; font-size: 12px; text-decoration: none;"
+                  >
+                    View Location
+                  </a>
+                </li>
+
+                <li class="mt-3">
+                  <a href="tel:+918778863036" style="text-decoration: none; color: inherit;">
+                    <i class="img-ic">
+                      <img src="./assets/call.png" alt="" />
+                    </i>
+                    <em>Phone Number :</em>
+                    +91 8778863036
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+           
+            <div class="kf-f-gallery element-anim-1 scroll-animate" data-animate="active">
+              <h5>Gallery</h5>
+
+              <ul>
+                <li>
+                  <a href="images/menu/malai-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/malai-chaap-1.png" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="images/menu/mexican-chaap-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/mexican-chaap-1.png" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="images/menu/schezwan-panner-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/schezwan-panner-1.png" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="images/menu/jumbo-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/jumbo-roll-1.png" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="images/menu/achari-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/aachari-chaap-roll-1.png" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="images/menu/mexican-chaap-roll-2.png" data-fancybox="footergall" data-caption="Delhi Malai Chaap Besant Nagar" class="kf-image-hover">
+                    <img src="images/menu/mexican-chaap-roll-1.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center">
+      
+            <div class="kf-copyright element-anim-1 scroll-animate" data-animate="active">
+              Copyright © 2025 Delhi Malai Chaap | All Rights Reserved. Designed by <b>WiseWebTek.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/splitting.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+    <script src="js/jquery.scrolla.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script>
+      const counters = document.querySelectorAll(".num");
+      const options = { threshold: 0.5 };
+
+      const runCounter = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        const speed = 100;
+        let count = 0;
+
+        const updateCount = () => {
+          const increment = target / speed;
+
+          if (count < target) {
+            count += increment;
+            counter.innerText = Math.ceil(count) + "+";
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target + "+";
+          }
+        };
+
+        updateCount();
+      };
+
+      const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            runCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      counters.forEach((counter) => {
+        observer.observe(counter);
+      });
+
+      (function () {
+        function debounce(fn, t) {
+          var timer;
+          return function () {
+            clearTimeout(timer);
+            timer = setTimeout(fn, t);
+          };
+        }
+
+        function applySlideBackgrounds() {
+          var isMobile = window.innerWidth <= 768;
+          var slides = document.querySelectorAll(".kf-started-slider .slide");
+
+          slides.forEach(function (el) {
+            var desktop = el.getAttribute("data-bg") || "";
+            var mobile = el.getAttribute("data-bg-mobile") || desktop;
+            var useUrl = isMobile ? mobile : desktop;
+
+            if (useUrl) {
+              el.style.setProperty("background-image", 'url("' + useUrl + '")', "important");
+              el.style.setProperty("background-size", "cover", "important");
+              el.style.setProperty("background-position", "center center", "important");
+              el.style.setProperty("background-repeat", "no-repeat", "important");
+            }
+
+            el.querySelectorAll("img, picture, source").forEach(function (n) {
+              n.remove();
+            });
+          });
+        }
+
+        document.addEventListener("DOMContentLoaded", applySlideBackgrounds);
+        window.addEventListener("resize", debounce(applySlideBackgrounds, 150));
+      })();
+
+      (function () {
+        const testimonialViewport = document.getElementById("testimonialViewport");
+        const testimonialTrack = document.getElementById("testimonialTrack");
+        const dotsContainer = document.getElementById("testimonialDots");
+        let cards = Array.from(testimonialTrack.children);
+
+        testimonialTrack.innerHTML += testimonialTrack.innerHTML;
+        cards = Array.from(testimonialTrack.children);
+
+        const gap = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--card-gap")) || 28;
+        const speed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--auto-speed")) || 60;
+        const groupSize = 2;
+
+        const originalCount = cards.length / 2;
+        const totalGroups = Math.max(1, Math.ceil(originalCount / groupSize));
+
+        function buildDots() {
+          dotsContainer.innerHTML = "";
+
+          for (let i = 0; i < totalGroups; i++) {
+            const s = document.createElement("span");
+            s.className = "testimonial-dot" + (i === 0 ? " active" : "");
+            s.dataset.group = i;
+            s.addEventListener("click", onDotClick);
+            dotsContainer.appendChild(s);
+          }
+        }
+
+        function onDotClick(e) {
+          const g = Number(e.currentTarget.dataset.group);
+
+          stopAuto();
+          const cardW = cards[0].offsetWidth;
+          const left = g * (cardW + gap) * groupSize;
+
+          testimonialViewport.scrollTo({ left, behavior: "smooth" });
+          setActiveDot(g);
+
+          setTimeout(startAuto, 2500);
+        }
+
+        function setActiveDot(i) {
+          const dots = dotsContainer.querySelectorAll(".testimonial-dot");
+          dots.forEach((d) => d.classList.remove("active"));
+          if (dots[i]) dots[i].classList.add("active");
+        }
+
+        buildDots();
+
+        let rafId = null;
+        let lastTs = null;
+        let isPaused = false;
+
+        function step(ts) {
+          if (lastTs === null) lastTs = ts;
+          const dt = (ts - lastTs) / 1000;
+          lastTs = ts;
+
+          if (!isPaused) {
+            const delta = speed * dt;
+            testimonialViewport.scrollLeft += delta;
+
+            const half = testimonialTrack.scrollWidth / 2;
+
+            if (testimonialViewport.scrollLeft >= half) {
+              testimonialViewport.scrollLeft -= half;
+            }
+
+            updateActiveDotByScroll();
+          }
+
+          rafId = requestAnimationFrame(step);
+        }
+
+        function startAuto() {
+          if (!rafId) rafId = requestAnimationFrame(step);
+        }
+
+        function stopAuto() {
+          if (rafId) {
+            cancelAnimationFrame(rafId);
+            rafId = null;
+            lastTs = null;
+          }
+        }
+
+        function updateActiveDotByScroll() {
+          const cardW = cards[0].offsetWidth;
+          const w = cardW + gap;
+          const pos = testimonialViewport.scrollLeft % (w * originalCount);
+          const group = Math.round(pos / (w * groupSize));
+          setActiveDot(Math.max(0, Math.min(group, totalGroups - 1)));
+        }
+
+        testimonialViewport.addEventListener("mouseenter", () => (isPaused = true));
+        testimonialViewport.addEventListener("mouseleave", () => (isPaused = false));
+        testimonialViewport.addEventListener("focusin", () => (isPaused = true));
+        testimonialViewport.addEventListener("focusout", () => (isPaused = false));
+
+        let userScrollTimer;
+        testimonialViewport.addEventListener(
+          "wheel",
+          () => {
+            isPaused = true;
+            clearTimeout(userScrollTimer);
+            userScrollTimer = setTimeout(() => (isPaused = false), 1500);
+          },
+          { passive: true }
+        );
+
+        window.addEventListener("resize", () => {
+          setTimeout(() => {
+            if (testimonialViewport.scrollLeft >= testimonialTrack.scrollWidth / 2) {
+              testimonialViewport.scrollLeft = testimonialViewport.scrollLeft % (testimonialTrack.scrollWidth / 2);
+            }
+          }, 60);
+        });
+
+        startAuto();
+      })();
+    </script>
+  </body>
+</html>
